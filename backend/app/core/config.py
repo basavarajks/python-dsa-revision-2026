@@ -7,6 +7,7 @@ class Settings(BaseModel):
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 24
     database_url: str = "sqlite:///./memoryvault.db"
+    cors_origins: tuple[str, ...] = ("http://127.0.0.1:5173", "http://localhost:5173")
     important_keywords: tuple[str, ...] = (
         "exam",
         "deadline",

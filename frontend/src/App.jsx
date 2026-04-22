@@ -5,8 +5,8 @@ const tabs = ['Dashboard', 'Memory Explorer', 'Ask AI'];
 
 function AuthPanel({ onAuth }) {
   const [isSignup, setIsSignup] = useState(true);
-  const [email, setEmail] = useState('demo@memoryvault.ai');
-  const [password, setPassword] = useState('Demo@123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const submit = async (e) => {
